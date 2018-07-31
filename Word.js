@@ -26,16 +26,15 @@ Word.prototype.updateGuessed = function(guess) {
     this.displayWord();
 }
 
-// var hello = new Word("hello");
+Word.prototype.isFinished = function() {
+    var allGuessed = true;
+    this.letterObjs.forEach(function(letter) {
+        if (letter.guessed === false) {
+            allGuessed = false;
+        }
+    })
+    return allGuessed;
+}
 
-// hello.displayWord();
-// var guess = "e";
-// hello.updateGuessed(guess);
-
-// guess = "l";
-// hello.updateGuessed(guess);
-
-// guess = "s";
-// hello.updateGuessed(guess);
 
 module.exports = Word;
