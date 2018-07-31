@@ -18,14 +18,5 @@ Letter.prototype.updateGuessed = function(guess) {
     }
 }
 
-// var h = new Letter("h");
-// var b = new Letter("b");
-
-// var guess = "h";
-// h.updateGuessed(guess);
-// console.log(h.displayLetter());
-
-// b.updateGuessed(guess);
-// console.log(b.displayLetter());
 
 module.exports = Letter;
