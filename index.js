@@ -9,7 +9,7 @@ function setWord() {
     var word = randomWords();
     currentWord = new Word(word);
     currentWord.displayWord();
-    console.log(word);
+    // console.log(word);
 }
 
 count = 10;
